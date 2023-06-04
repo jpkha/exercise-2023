@@ -1,0 +1,14 @@
+@import 'variables';
+@import 'utils';
+.home {
+  &__mainContainer {
+    padding: $pwd-specific-space $pwd-space-2xl;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+
+    @include pwd-on-mobile {
+      padding: $pwd-specific-space $pwd-space-l;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@import 'variables';
+.pwdButton {
+  &__container {
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 60px;
+    height: fit-content;
+  }
+  &__button {
+    @extend %pwd-font-button;
+    font-family: var(--font-graphik);
+    font-weight: 600;
+    border-radius: $button-height;
+    height: $button-height;
+    margin: $pwd-space-xxs;
+    border: none;
+    padding: 0 $pwd-space-xl;
+    background-color: $neon-green-color;
+    cursor: pointer;
+    transition: filter 260ms ease-in-out;
+    &:hover {
+      filter: brightness(0.5);
+    }
+  }
+}

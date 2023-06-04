@@ -1,0 +1,18 @@
+@import "variables";
+
+.categorySection {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    @extend %pwd-title-h2;
+    padding-bottom: 20px;
+  }
+
+  &__link {
+    @extend %pwd-font-button;
+    color: $neon-green-color;
+    text-decoration-line: none;
+  }
+};

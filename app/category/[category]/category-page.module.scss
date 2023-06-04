@@ -1,0 +1,11 @@
+@import 'variables';
+@import 'utils';
+
+.categoryPage {
+  &__section {
+    padding: $pwd-specific-space $pwd-space-2xl;
+    @include pwd-on-mobile {
+      padding: $pwd-specific-space $pwd-space-l;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import 'variables';
+
+.iconButton {
+  &__container {
+    height: $icon-container-size;
+    width: $icon-container-size;
+    border-radius: 50%;
+    background-color: $electron-dark-gray-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    transition: filter 260ms ease-in-out;
+    &:hover {
+      filter: brightness(0.5);
+    }
+    > svg {
+      height: $icon-size;
+      width: $icon-size;
+    }
+  }
+}

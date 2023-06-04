@@ -1,0 +1,47 @@
+@import 'variables';
+@import 'utils';
+
+.header {
+  &__container {
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+    background-color: $night-gray-color;
+  }
+  &__logoContainer {
+    height: 32px;
+    display: flex;
+    align-items: center;
+    margin: 0 14px;
+  }
+
+  &__logo {
+    height: $icon-size;
+    width: $icon-size;
+  }
+
+  &__mainContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 36px $pwd-space-2xl;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+    gap: 30px;
+    flex-wrap: wrap;
+    @include pwd-on-mobile {
+      padding: 36px $pwd-space-l;
+    }
+    &::after {
+      content: '';
+      height:$pwd-space-xxs;
+      background-color: $electron-gray-color;
+      opacity: 0.2;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
+    }
+  }
+}

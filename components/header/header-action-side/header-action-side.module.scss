@@ -1,0 +1,13 @@
+@import 'variables';
+@import 'utils';
+
+.headerActionSide {
+  &__container {
+    display: flex;
+    gap: $pwd-space-m;
+    align-items: center;
+    @include pwd-on-mobile {
+      gap: $pwd-space-s;
+    }
+  }
+}

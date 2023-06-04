@@ -1,0 +1,11 @@
+@import "variables";
+
+.pwdTag {
+  padding: $pwd-space-xxs $pwd-space-xs;
+  border-radius: 3px;
+  font-weight: 900;
+  font-size: 0.625rem;
+  line-height: 0.75rem;
+  color: $electron-dark-gray-color;
+  background-color: $electron-gray-color;
+}

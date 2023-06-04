@@ -1,0 +1,9 @@
+@import 'variables';
+@import 'utils';
+.videoPage {
+  --plyr-color-main: #CCFF00;
+  padding: $pwd-specific-space $pwd-space-2xl;
+  @include pwd-on-mobile {
+    padding: $pwd-specific-space $pwd-space-l;
+  }
+}

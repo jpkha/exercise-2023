@@ -1,0 +1,40 @@
+@import "variables";
+
+
+.screenRecording {
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+  &__title {
+    @extend %pwd-title-h2;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    > svg {
+      width: $icon-size;
+      height: $icon-size;
+      margin-left: 10px;
+    }
+  }
+  &__logoScreen {
+    height: 64px;
+    width: 64px;
+    background-color: $electron-dark-gray-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    > svg {
+      width: 36px;
+      height: 36px;
+    }
+  }
+  &__section {
+    padding: 0 20px;
+  }
+  &__tagContainer {
+    display: flex;
+    gap: 6px;
+  }
+
+}
